@@ -29,6 +29,7 @@ dependencies {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
 	runtimeOnly 'org.webjars:bootstrap:5.1.1'
+	implementation group: 'org.webjars', name:'jquery', version:'3.5.1'
 }
 
 tasks.named('test') {

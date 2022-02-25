@@ -3,7 +3,6 @@ package com.kjspo.board.dto;
 import com.kjspo.board.domain.entity.Board;
 import lombok.*;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter

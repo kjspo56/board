@@ -15,7 +15,9 @@ import java.time.LocalDateTime;
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @EntityListeners(AuditingEntityListener.class) // JPA에게 해당 Entity는 Auditing 기능을 사용
+
 public class Board {
+
     @Id
     @GeneratedValue
     private Long id;

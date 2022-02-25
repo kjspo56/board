@@ -82,15 +82,16 @@ public class BoardController {
         return "redirect:/";
     }
 
-    //수정페이지로 이동
+    //해당 데이터 수정페이지로 이동
     @GetMapping("post/{id}")
     public String detail(@PathVariable("id") Long id, Model model){
         BoardDto boardDto = boardService.getPost(id);
         model.addAttribute("post", boardDto);
+        System.out.println(boardDto);
         return "board/detail.html";
     }
 
-    //수정작업
+    //수정작업 적용
     @GetMapping("/post/edit/{id}")
     public String edit(@PathVariable("id") Long id, Model model){
         BoardDto boardDto = boardService.getPost(id);

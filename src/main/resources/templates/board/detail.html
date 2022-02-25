@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title th:text="@{'게시판 - ' + ${post.title}}"></title>
   <link rel='stylesheet' href='/webjars/bootstrap/5.1.1/css/bootstrap.min.css'>
+
 </head>
 <body>
 <header th:insert="common/header.html"></header>
@@ -36,5 +37,9 @@
 </div>
 <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
 <script src="/webjars/bootstrap/5.1.1/js/bootstrap.min.js"></script>
+<script>
+  const test = '${post}';
+  console.log(test);
+</script>
 </body>
 </html>
